@@ -21,7 +21,7 @@
         const formData = new FormData()
         formData.append('myFile', files[0])
 
-        fetch('https://d02abf7d1a18.ngrok.io/pred', {
+        fetch('http://127.0.0.1:8000/pred', {
             method: 'POST',
             body: formData
         })
