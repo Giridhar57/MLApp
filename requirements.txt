@@ -1,4 +1,4 @@
-torch==0.4.1
+http://download.pytorch.org/whl/cpu/
 torchvision==0.2.2
 pillow
 flask
