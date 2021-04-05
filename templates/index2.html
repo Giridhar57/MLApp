@@ -21,7 +21,7 @@
         const formData = new FormData()
         formData.append('myFile', files[0])
 
-        fetch('http://127.0.0.1:8000/pred', {
+        fetch('https://imgclsfr1.herokuapp.com/pred', {
             method: 'POST',
             body: formData
         })
