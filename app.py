@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask,request,render_template
 from flask_cors import CORS
 import PIL
 import torch
@@ -56,7 +56,7 @@ def predict(image_path, model):
 
 @app.route('/', methods=['GET'])
 def home():
-    return 'API is not running'
+    return render_template("index.html")
 
 
 @app.route('/pred', methods=['POST'])
